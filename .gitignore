@@ -236,3 +236,4 @@ dist
 
 /.attachignore
 /.qualified-attach.json
+/build/*
