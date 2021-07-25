@@ -1,0 +1,30 @@
+/*
+flip card
+*/
+.card-f > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.card-fr {
+    transform: rotateY(0deg);
+}
+
+.card-bk {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+
+.card-f.fl .card-fr {
+    transform: rotateY(-180deg);
+}
+
+.card-f.fl .card-bk {
+    transform: rotateY(0deg);
+}
